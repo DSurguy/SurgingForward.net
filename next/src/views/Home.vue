@@ -1,7 +1,6 @@
 <template>
   <div class="view--home">
     <div class="hero">
-      <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
       <div class="hero__content">
         <div class="hero__header">
           <h1>Derek Surguy</h1>
@@ -58,14 +57,25 @@
 }
 .hero__header {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  margin: 0 2.5rem;
-  border-bottom: 2px solid #fff;
+  margin: 0;
   height: 50%;
+  width: 100%;
   text-align: center;
   line-height: 2.5rem;
+}
+.hero__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 2.5rem;
+  left: 2.5rem;
+  height: 2px;
+  background-color: #fff;
+  display: block;
 }
 .hero__header h1 {
   margin: 0;
@@ -74,8 +84,7 @@
   display: flex;
   justify-content: center;
   font-size: 0.85rem;
-  height: 35%;
-  margin-top: 5%;
+  margin-top: 1.25rem;
   text-align: center;
 }
 .hero__subheader h2 {
@@ -88,7 +97,6 @@
 </style>
 
 <script>
-// @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {

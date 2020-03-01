@@ -347,3 +347,16 @@ template {
 [hidden] {
   display: none;
 }
+
+
+/**
+ * CUSTOM CSS
+ */
+.toasted-container.top-right {
+  top: 2rem;
+  right: 2rem;
+}
+.toasted-container .toasted {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

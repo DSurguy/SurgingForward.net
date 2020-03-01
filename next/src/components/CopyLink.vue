@@ -179,8 +179,11 @@ export default class CopyLink extends Vue {
       range.selectNode(this.$refs.input as HTMLElement);
       window.getSelection()!.addRange(range);
       document.execCommand('copy');
+      this.$toasted.success(`Copied to clipboard: "${this.href}"`);
     } catch (e){
-
+      this.$toasted.error("Unable to copy link", {
+        duration: 2000
+      });
     }
   }
 }

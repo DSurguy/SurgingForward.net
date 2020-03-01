@@ -31,9 +31,13 @@
           Connect with me on any of these services
         </div>
       </div>
-      <!-- <StyledSocialLink icon={mailIconSrc} href="Surguy.Derek@gmail.com" linkPrefix={'mailto:'} />
-      <StyledSocialLink icon={githubIconSrc} href="https://github.com/DSurguy" />
-      <StyledSocialLink icon={linkedInIconSrc} href="https://linkedin.com/DSurguy" /> -->
+      <CopyLink 
+        v-for="link in copyLinks"
+        :key="link.href"
+        :link-prefix="link.linkPrefix"
+        :href="link.href"
+        :icon="link.icon"
+      />
     </div>
   </div>
 </template>
@@ -202,9 +206,21 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import CopyLink from '@/components/CopyLink.vue';
+import GithubIcon from '@/assets/github.svg'
+import EmailIcon from '@/assets/email-outline.svg'
+import LinkedInIcon from '@/assets/linkedin.svg'
 
-@Component
+@Component({
+  components: {
+    CopyLink
+  }
+})
 export default class HomeView extends Vue {
-  
+  copyLinks = [
+    {icon: EmailIcon, href:"Surguy.Derek@gmail.com", linkPrefix: "mailto:"},
+    {icon: GithubIcon, href:"https://github.com/DSurguy"},
+    {icon: LinkedInIcon, href:"https://linkedin.com/DSurguy"}
+  ]
 }
 </script>

@@ -13,11 +13,5 @@ jobs:
             - run: npm run test:unit
 workflows:
   build-and-test:
-    triggers:
-      filters:
-        branches:
-          only:
-            - master
-            - vue
     jobs:
       - build-and-test

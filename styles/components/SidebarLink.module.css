@@ -1,0 +1,21 @@
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer; 
+  transition: background-color 0.1s linear;
+}
+.sidebarLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebarLinkContent {
+  display: flex;
+  align-items: center;
+}
+.sidebarLinkIcon {
+  margin-left: 0.5rem;
+}
+.sidebarLinkIconInactive {
+  composes: sidebarLinkIcon;
+  opacity: 0.7;
+}

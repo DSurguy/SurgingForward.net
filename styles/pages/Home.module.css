@@ -5,9 +5,14 @@
 
 .sidebar {
   flex: 0;
-  flex-basis: 320px;
+  flex-basis: 240px;
   min-height: 100vh;
   background-color: #0C1A1D;
+  color: #fff;
+}
+
+.mainContainer {
+  flex: 1;
 }
 
 .main {
@@ -48,8 +53,4 @@
   font-size: 1.2rem;
   font-weight: 500;
   padding-bottom: 0.5rem;
-}
-
-.mainContainer {
-  flex: 1;
 }

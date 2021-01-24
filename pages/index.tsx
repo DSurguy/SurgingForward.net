@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Image from 'next/image';
+import styles from '../styles/pages/Home.module.css'
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   return (
@@ -10,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.sidebar}></div>
+      <div className={styles.sidebar}>
+        <Sidebar />
+      </div>
       <div className={styles.mainContainer}>
         <main className={styles.main}>
           <div className={styles.hero}>

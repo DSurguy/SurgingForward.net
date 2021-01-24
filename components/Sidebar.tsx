@@ -16,7 +16,7 @@ export default function Sidebar() {
         <SidebarLink href="/contact" label="Contact" icon={MailIcon} />
       </div>
       <div className={styles.sidebarLink}>
-        <SidebarLink href="/resume" label="Contact" icon={FileTextIcon} />
+        <SidebarLink href="/resume" label="Resume" icon={FileTextIcon} />
       </div>
       <div className={styles.sidebarLink}>
         <SidebarLink href="/blog" label="Blog" icon={ReadIcon} />

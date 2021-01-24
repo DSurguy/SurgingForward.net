@@ -6,12 +6,18 @@ function SidebarLink({ href, label, icon: IconComponent, matchFullPath = false }
   const router = useRouter();
   const pathIsActive = matchFullPath ? router.pathname === href : router.pathname.startsWith(href);
   const iconSize = '1.25rem';
+  const linkClassNames = [styles.sidebarLink];
+  const iconClassName = [styles.sidebarLinkIcon];
+  if( pathIsActive ) {
+    linkClassNames.push(styles.sidebarLinkActive);
+    iconClassName.push(styles.sidebarLinkIconActive);
+  }
 
   return (
-    <div className={styles.sidebarLink}>
+    <div className={linkClassNames.join(' ')}>
       <Link href={href}>
         <div className={styles.sidebarLinkContent}>
-          {label} <IconComponent width={iconSize} height={iconSize} className={pathIsActive ? styles.sidebarLinkIcon : styles.sidebarLinkIconInactive} />
+          {label} <IconComponent width={iconSize} height={iconSize} className={iconClassName.join(' ')} />
         </div>
       </Link>
     </div>

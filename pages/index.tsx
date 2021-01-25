@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/pages/Home.module.css'
 import layoutStyles from '../styles/layout.module.css';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -15,15 +16,25 @@ export default function Home() {
         <Sidebar />
       </div>
       <div className={layoutStyles.mainContainer}>
-        <main className={layoutStyles.main}>
-          <div className={styles.hero}>
-            <div className={styles.heroText}>
-              <h1>Derek Surguy</h1>
-              <div className={styles.heroSubtitle}>Senior Front-End Software Engineer</div>
-            </div>
+        <div className={styles.hero}>
+          <div className={styles.heroText}>
+            <h1>Derek Surguy</h1>
+            <div className={styles.heroSubtitle}>Senior Front-End Software Engineer</div>
           </div>
+        </div>
+        <main className={layoutStyles.main}>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
         </main>
-        <footer className={layoutStyles.footer}></footer>
+        <Footer></Footer>
       </div>
     </div>
   )

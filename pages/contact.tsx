@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/pages/Home.module.css'
 import layoutStyles from '../styles/layout.module.css';
 import Sidebar from '../components/Sidebar';
 import ContentHero from '../components/ContentHero';

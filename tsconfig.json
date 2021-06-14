@@ -11,7 +11,11 @@
     "lib": ["esnext", "dom"],
     "plugins": [
       { "name": "@vuedx/typescript-plugin-vue" }
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

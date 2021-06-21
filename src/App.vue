@@ -12,9 +12,35 @@ export default defineComponent({
 </script>
 
 <style>
+* {
+  font-family: 'Mukta', sans-serif;
+}
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
   padding: 0;
+}
+p {
+  margin: 0;
+  padding: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4, h5, h6 {
+  font-size: 1em;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -27,5 +53,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  position: fixed;
+  overflow: auto;
 }
 </style>

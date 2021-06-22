@@ -1,15 +1,18 @@
 <template>
-  <div class="hero-container" :style="{
+  <div class="ds-hero-container" :style="{
     backgroundImage: `url(${heroImageSrc})`
   }">
-    <div class="hero-body">
+    <div class="ds-hero-body">
       <h1>Derek Surguy</h1>
-      <div class="hero-divider"></div>
+      <div class="ds-hero-divider"></div>
       <h2>Front-End Software Engineer</h2>
     </div>
   </div>
   <div class="main-container">
     <div class="main-body">
+      <nav class="nav">
+        <router-link to="/" class="button is-ghost">Home</router-link>
+      </nav>
       <p>hello</p>
     </div>
   </div>
@@ -30,7 +33,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.hero-container {
+.ds-hero-container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,22 +45,22 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
 }
-.hero-body {
+.ds-hero-body {
   border: 4px solid #fdfdfd;
   color: #fdfdfd;
   text-shadow: 0 0 2px #000;
   width: 400px;
   margin-top: -2rem;
 }
-.hero-body h1 {
+.ds-hero-body h1 {
   font-weight: 700;
   margin: 1rem 0;
 }
-.hero-body h2 {
+.ds-hero-body h2 {
   font-weight: 400;
   margin: 1.5rem;
 }
-.hero-divider {
+.ds-hero-divider {
   height: 2px;
   width: 80%;
   margin: 0 auto;

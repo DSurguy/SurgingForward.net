@@ -72,4 +72,8 @@ export default defineComponent({
   margin: -5em auto 0 auto;
   background-color: #fdfdfd;
 }
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
 </style>
